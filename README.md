@@ -1,5 +1,5 @@
 # Lab 6 - Starter
 
-Name:Fione Hyunh, Younghoon Kim
+Name:Fione Huynh, Younghoon Kim
 
 link:https://yok029.github.io/Lab6_Starter/
