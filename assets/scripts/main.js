@@ -5,7 +5,10 @@
 const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
-  'https://introweb.tech/assets/json/chocolateChip.json'
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  'assets/recipes/ghostsmores.json',
+  'assets/recipes/mummybrie.json',
+  'assets/recipes/jackolanternsandwich.json'
 ];
 
 // Once all of the recipes that were specified above have been fetched, their
@@ -43,6 +46,23 @@ async function fetchRecipes() {
     // in the recipes folder and fetch them from there. You'll need to add their paths to the recipes array.
 
     // Part 1 Expose - TODO
+    for (const recipe of recipes) {
+      fetch(recipe)
+        .then(response => response.json())
+        .then(data => {
+          //console.log(data);
+          recipeData[recipe] = data;
+          if (recipes.length == Object.keys(recipeData).length) {
+            resolve(true);
+          }
+        })
+        .catch((error) => {
+          reject(false);
+        });
+    }
+
+    
+    return;
   });
 }
 
@@ -54,6 +74,19 @@ function createRecipeCards() {
   // show any others you've added when the user clicks on the "Show more" button.
 
   // Part 1 Expose - TODO
+  const mainContainer = document.getElementsByTagName('main')[0];
+
+  for(let i = 0; i < 3 ; i++){
+    const recipeElement = document.createElement('recipe-card');
+    recipeElement.data = recipeData[recipes[i]];
+    mainContainer.appendChild(recipeElement);
+  }
+  // for (const key of Object.keys(recipeData)){
+    
+  //   const recipeElement = document.createElement('recipe-card');
+  //   recipeElement.data = recipeData[key];
+  //   mainContainer.appendChild(recipeElement);    
+  // }
 }
 
 function bindShowMore() {
@@ -65,4 +98,23 @@ function bindShowMore() {
   // in the recipeData object where you stored them/
 
   // Part 2 Explore - TODO
+  const button = document.getElementsByTagName('button')[0];
+  const mainContainer = document.getElementsByTagName('main')[0];
+
+  button.addEventListener('click', function(){
+    if(button.innerHTML == 'Show more'){
+      for(let i = 3; i < recipes.length; i++){
+        const recipeElement = document.createElement('recipe-card');
+        recipeElement.data = recipeData[recipes[i]];
+        mainContainer.appendChild(recipeElement);
+      }
+      button.innerHTML = 'Show less';
+    }else{
+      let cards = document.getElementsByTagName('recipe-card');
+      for(let i = recipes.length - 1; i >= 3; i--){
+        cards[i].remove();
+      }
+      button.innerHTML = 'Show more';
+    }
+  })
 }
