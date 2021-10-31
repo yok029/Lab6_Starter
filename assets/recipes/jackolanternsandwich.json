@@ -1,0 +1,89 @@
+{
+    "@graph": [
+        {
+            "@type": "Question",
+            "text": "Which is your favorite to pair with pumpkin?",
+            "suggestedAnswer": [
+                {
+                    "@type": "Answer",
+                    "text": "Chocolate."
+                },
+                {
+                    "@type": "Answer",
+                    "text": "Cream cheese."
+                }
+            ]
+        }
+    ],
+    "@context": "http://schema.org",
+    "url": "https://www.delish.com/cooking/recipe-ideas/a37887818/jack-olantern-sandwich-cookies-recipe/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Delish",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://assets.hearstapps.com/sites/delish/assets/images/logos/logo-jsonld.58eed96.png",
+            "width": 219,
+            "height": 60
+        }
+    },
+    "@type": "Recipe",
+    "author": {
+        "name": "Makinze Gore",
+        "@type": "Person"
+    },
+    "datePublished": "2021-10-19T17:36:32.839567Z",
+    "headline": "Jack-O'-Lantern Sandwich Cookies",
+    "image": {
+        "@type": "ImageObject",
+        "height": 1201,
+        "thumbnail": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/211014-delish-seo-jack-o-lantern-cookies-horizontal-0291-eb-1634664198.jpg?crop=0.670xw:1.00xh;0.194xw,0&resize=100:*",
+        "url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/211014-delish-seo-jack-o-lantern-cookies-horizontal-0291-eb-1634664198.jpg",
+        "width": 1800
+    },
+    "mainEntityOfPage": {
+        "@id": "https://www.delish.com/cooking/recipe-ideas/a37887818/jack-olantern-sandwich-cookies-recipe/",
+        "@type": "WebPage"
+    },
+    "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/211014-delish-seo-jack-o-lantern-cookies-horizontal-0291-eb-1634664198.jpg?crop=0.670xw:1.00xh;0.194xw,0&resize=100:*",
+    "isAccessibleForFree": "False",
+    "hasPart": [
+        {
+            "@type": "WebPageElement",
+            "isAccessibleForFree": "False",
+            "cssSelector": ".content-container"
+        }
+    ],
+    "name": "Jack-O'-Lantern Sandwich Cookies",
+    "prepTime": "PT15M",
+    "cookTime": "PT0S",
+    "totalTime": "PT3H30M",
+    "recipeIngredient": [
+        "2 3/4 c. <p>all-purpose flour, plus more for surface</p>",
+        "1 1/2 tsp. <p>pumpkin spice</p>",
+        "1 tsp. <p>baking powder</p>",
+        "1/2 tsp. <p>kosher salt</p>",
+        "1/2 c. <p>(1 stick)&nbsp;butter, softened</p>",
+        "1/2 c. <p>granulated sugar</p>",
+        "1/2 c. <p>packed brown sugar</p>",
+        "1 <p>large egg</p>",
+        "1/2 c. <p>pumpkin puree</p>",
+        "1 tsp. <p>pure vanilla extract</p>",
+        "6 oz. <p>cream cheese, softened</p>",
+        "1 1/2 c. <p>powdered sugar</p>",
+        "1 tsp. <p>pure vanilla extract</p>",
+        "<p>Pinch kosher salt</p>"
+    ],
+    "recipeInstructions": "In a large bowl, whisk together flour, pumpkin spice, baking powder, and salt.&nbsp; In another large bowl using a hand mixer, beat butter and sugars together until creamy. Add egg and beat until incorporated. Add pumpkin and vanilla and beat again. Add dry ingredients and beat until just combined. Divide dough into two discs and refrigerate until well chilled, at least 2 hours and up to 3 days.&nbsp; Line 2 baking sheets with parchment. Working with one disc at a time, on a floured surface, roll dough out to \u00bc\u201d thick. Cut cookies out using a pumpkin cookie cutter and place on prepared baking sheets. Re-roll scraps and cut out more cookies. Freeze cookies for 15 minutes.&nbsp; Preheat oven to 350\u00b0. Cut faces out of half of the cookies using a paring knife. If dough becomes too warm, freeze cookies again to make it easier and before baking to ensure they hold their shape.&nbsp; Bake until set, 8 to 10 minutes. Let cool completely.&nbsp; Make frosting: Meanwhile, in a large bowl using a hand mixer, beat cream cheese and powdered sugar until smooth. Add vanilla and a pinch of salt and mix to combine.&nbsp; Flip cookies without faces over and spread with frosting. Top with a cookie with a face.",
+    "video": [],
+    "recipeCuisine": [],
+    "recipeCategory": [
+        "autumn",
+        "Halloween",
+        "baking",
+        "dessert"
+    ],
+    "recipeYield": "12 servings",
+    "description": "These pumpkin spice Jack-O'-Lantern Sandwich Cookies have a sweet cream cheese filling. ",
+    "keywords": "Halloween, autumn, baking, dessert"
+}
